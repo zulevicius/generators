@@ -13,6 +13,7 @@ class ArrayStringGenerator extends AbstractGenerator
         int $length,
     ) {
         $this->setLength($length);
+        $this->stringGenerator->setConverter(null);
     }
 
     public function generate(): array
